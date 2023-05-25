@@ -48,7 +48,7 @@ let flatNumber = +prompt("Enter the number of the flat: ");
 
 let allFlats = floors * flats;
 let entrance = Math.ceil(flatNumber / flats / floors);
-let floorNum = math.ceil(flatNumber % allFlats / flats);
+let floorNum = Math.ceil(flatNumber % allFlats / flats);
 
 alert("Entrance: " + entrance + ", Floor: " + floorNum);
 
