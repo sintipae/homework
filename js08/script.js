@@ -200,7 +200,7 @@
     .then(res => res.json())
     .then(data => {
         const rates = data.rates;
-        const container = document.getElementById('currency-buttons'); // Припустимо, що у вас є елемент з id "currency-buttons" для розміщення кнопок
+        const container = document.getElementById('currency-buttons');
 
         for (const currency in rates) {
             const button = document.createElement('button');
@@ -228,8 +228,7 @@
     const rates = {
         USD: 1.22,
         EUR: 1.09,
-        GBP: 0.88,
-        // Додайте інші валюти тут
+        GBP: 0.88
     };
   
     const fromSelect = document.getElementById('from');
